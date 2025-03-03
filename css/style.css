@@ -19,11 +19,15 @@ body {
   font-family: "lato", sans-serif;
 }
 
+.u-margin-top {
+  margin-top: 2rem;
+}
+
 .u-margin-bottom {
   margin-bottom: 3rem;
 }
 
-.btn:link, .btn:visited {
+.btn, .btn:link, .btn:visited {
   font-family: inherit;
   font-size: 1.6rem;
   text-decoration: none;
@@ -46,6 +50,10 @@ body {
 }
 .btn--blue {
   color: #fff;
+}
+.btn--blue-dark {
+  color: #fff;
+  background-color: #487197;
 }
 
 .form {
@@ -134,6 +142,10 @@ body {
 }
 .form__radio-input:checked ~ .form__radio-label .form__radio-button::after {
   opacity: 1;
+}
+.form__button {
+  display: flex;
+  justify-content: center;
 }
 
 .popup {
