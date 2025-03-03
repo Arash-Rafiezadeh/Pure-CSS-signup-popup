@@ -25,11 +25,82 @@
           sunt accusantiums maxime necessitatibus blanditiis atque
         </p>
         <div class="btn-container">
-          <button href="#" class="tour__signup btn btn--blue">
+          <a href="#popup" class="tour__signup btn btn--blue">
             Signup now &rarr;
-          </button>
+          </a>
         </div>
       </div>
     </section>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__close">
+          <a href="#section-tours" class="popup__close-button">Close</a>
+        </div>
+        <form action="#" class="form">
+          <h3 class="form__title u-margin-bottom">Signup Now!</h3>
+          <div class="form__group">
+            <input
+              type="text"
+              class="form__input"
+              placeholder="Full name"
+              id="name"
+              required
+            />
+            <label for="name" class="form__label">Full name</label>
+          </div>
+          <div class="form__group">
+            <input
+              type="email"
+              class="form__input"
+              placeholder="E-mail Address"
+              id="email"
+              required
+            />
+            <label for="email" class="form__label">Email Address</label>
+          </div>
+          <div class="form__group">
+            <input
+              class="form__input"
+              type="tel"
+              placeholder="Phone number &lpar; optional &rpar;"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{4}[0-9]{3}[0-9]{4}"
+            />
+            <label for="phone" class="form__label">
+              Phone number &lpar; optional &rpar;
+            </label>
+          </div>
+          <div class="form__group">
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="single"
+                name="size"
+              />
+              <label for="single" class="form__radio-label"
+                ><span class="form__radio-button"></span>Single</label
+              >
+            </div>
+            <div class="form__radio-group">
+              <input
+                type="radio"
+                class="form__radio-input"
+                id="group"
+                name="size"
+              />
+              <label for="group" class="form__radio-label"
+                ><span class="form__radio-button"></span>Group</label
+              >
+            </div>
+          </div>
+          <div class="form__group">
+            <button class="form__btn">Next &rarr;</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
