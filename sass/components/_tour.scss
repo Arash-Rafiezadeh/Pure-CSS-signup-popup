@@ -1,0 +1,41 @@
+.tour {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 60%;
+  padding: 3rem;
+
+  /*   background-color: rgba($color-white, 0.8); */
+  background-image: linear-gradient(
+    to right,
+    rgba($color-white, 0.8) 0%,
+    rgba($color-white, 0.8) 40%,
+    transparent 100%
+  );
+
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+  &__header {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: $color-grey-dark-2;
+    letter-spacing: 0.5rem;
+  }
+
+  &__text {
+    font-size: 2rem;
+    color: $color-grey-dark-3;
+    margin: 3rem 0 5rem 0;
+    line-height: 1.7;
+  }
+
+  &__signup {
+    display: block;
+    height: 4rem;
+    position: absolute;
+    margin-top: 3rem;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}

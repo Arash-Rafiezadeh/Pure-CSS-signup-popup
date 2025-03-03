@@ -1,0 +1,78 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+.btn {
+  font-family: inherit;
+  font-size: 1.6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 5px;
+}
+.btn--blue {
+  color: #fff;
+}
+
+.tour {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 60%;
+  padding: 3rem;
+  /*   background-color: rgba($color-white, 0.8); */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 40%, transparent 100%);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.tour__header {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  color: #555;
+  letter-spacing: 0.5rem;
+}
+.tour__text {
+  font-size: 2rem;
+  color: #333;
+  margin: 3rem 0 5rem 0;
+  line-height: 1.7;
+}
+.tour__signup {
+  display: block;
+  height: 4rem;
+  position: absolute;
+  margin-top: 3rem;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.section-tour {
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/section-tour-background.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
