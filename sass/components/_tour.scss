@@ -5,13 +5,46 @@
   width: 60%;
   padding: 3rem;
 
-  /*   background-color: rgba($color-white, 0.8); */
+  @include respond(tab-land) {
+    top: 5%;
+    right: 5%;
+    width: 80%;
+  }
+
   background-image: linear-gradient(
     to right,
     rgba($color-white, 0.8) 0%,
     rgba($color-white, 0.8) 40%,
     transparent 100%
   );
+
+  @include respond(tab-land) {
+    top: 5%;
+    right: 5%;
+    width: 80%;
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.95) 0%,
+      rgba($color-white, 0.75) 90%,
+      transparent 100%
+    );
+  }
+
+  @include respond(tab-port) {
+    top: 15%;
+    right: 10%;
+    width: 80%;
+    padding: 2.7rem;
+  }
+
+  @include respond(phone) {
+    background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.95) 0%,
+      rgba($color-white, 0.95) 90%,
+      rgba($color-white, 0.9) 100%
+    );
+  }
 
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
@@ -22,6 +55,17 @@
     text-transform: uppercase;
     color: $color-grey-dark-2;
     letter-spacing: 0.5rem;
+    @include respond(tab-port) {
+      font-size: 2.8rem;
+      letter-spacing: 0.3rem;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    @include respond(phone) {
+      font-size: 2.5rem;
+      letter-spacing: 0.3rem;
+    }
   }
 
   &__text {
@@ -38,5 +82,13 @@
     margin-top: 3rem;
     bottom: 2rem;
     right: 2rem;
+    text-align: center;
+
+    @include respond(tab-port) {
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      transform: translateX(1rem);
+    }
   }
 }

@@ -10,6 +10,21 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 75em) {
+  html {
+    font-size: 56.2%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 56.2%;
+  }
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 56.2%;
+  }
+}
 
 body {
   box-sizing: border-box;
@@ -40,6 +55,11 @@ body {
   border-radius: 5px;
   transition: all 0.2s;
 }
+@media (max-width: 56.25em) {
+  .btn, .btn:link, .btn:visited {
+    background-color: rgba(72, 113, 151, 0.7);
+  }
+}
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
@@ -50,6 +70,11 @@ body {
 }
 .btn--blue {
   color: #fff;
+}
+@media (max-width: 37.5em) {
+  .btn--blue {
+    background-color: #487197;
+  }
 }
 .btn--blue-dark {
   color: #fff;
@@ -166,9 +191,25 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  max-width: 40rem;
+  max-width: 60rem;
   background-color: #fff;
   border-radius: 0.5rem;
+}
+@media (max-width: 75em) {
+  .popup__content {
+    width: 60%;
+    max-width: none;
+  }
+}
+@media (max-width: 56.25em) {
+  .popup__content {
+    width: 70%;
+  }
+}
+@media (max-width: 37.5em) {
+  .popup__content {
+    width: 90%;
+  }
 }
 .popup:target {
   opacity: 1;
@@ -210,10 +251,37 @@ body {
   right: 10%;
   width: 60%;
   padding: 3rem;
-  /*   background-color: rgba($color-white, 0.8); */
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 40%, transparent 100%);
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 75em) {
+  .tour {
+    top: 5%;
+    right: 5%;
+    width: 80%;
+  }
+}
+@media (max-width: 75em) {
+  .tour {
+    top: 5%;
+    right: 5%;
+    width: 80%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.75) 90%, transparent 100%);
+  }
+}
+@media (max-width: 56.25em) {
+  .tour {
+    top: 15%;
+    right: 10%;
+    width: 80%;
+    padding: 2.7rem;
+  }
+}
+@media (max-width: 37.5em) {
+  .tour {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.95) 90%, rgba(255, 255, 255, 0.9) 100%);
+  }
 }
 .tour__header {
   margin-left: 5rem;
@@ -221,6 +289,20 @@ body {
   text-transform: uppercase;
   color: #555;
   letter-spacing: 0.5rem;
+}
+@media (max-width: 56.25em) {
+  .tour__header {
+    font-size: 2.8rem;
+    letter-spacing: 0.3rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 37.5em) {
+  .tour__header {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
 }
 .tour__text {
   font-size: 2rem;
@@ -235,6 +317,15 @@ body {
   margin-top: 3rem;
   bottom: 2rem;
   right: 2rem;
+  text-align: center;
+}
+@media (max-width: 56.25em) {
+  .tour__signup {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    transform: translateX(1rem);
+  }
 }
 
 .section-tour {

@@ -13,6 +13,10 @@
     border: none;
     border-radius: 5px;
     transition: all 0.2s;
+
+    @include respond(tab-port) {
+      background-color: rgba($color-primary, 0.7);
+    }
   }
 
   &:hover {
@@ -27,6 +31,10 @@
 
   &--blue {
     color: $color-white;
+
+    @include respond(phone) {
+      background-color: $color-primary;
+    }
   }
 
   &--blue-dark {
